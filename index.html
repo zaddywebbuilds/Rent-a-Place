@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chilliwack Rentals &amp; Property Management | Rent a Place</title>
+<meta name="description" content="Rent a Place is a locally managed rental agency in Chilliwack, BC. Browse available suites, townhomes and commercial space across the Fraser Valley, and book a viewing with a local team.">
+<meta name="theme-color" content="#f4e5d0">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chilliwack Rentals &amp; Property Management | Rent a Place">
+<meta property="og:description" content="Locally managed rentals in Chilliwack and the Fraser Valley. Browse available homes and book a viewing.">
+<meta property="og:image" content="assets/img/og-cover.jpg">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Rent a Place",
+  "description": "Locally managed rental agency serving Chilliwack and the Fraser Valley.",
+  "telephone": "+1-778-312-1408",
+  "email": "office@ratzlaffco.ca",
+  "areaServed": "Chilliwack, British Columbia",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chilliwack",
+    "addressRegion": "BC",
+    "addressCountry": "CA"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "10:00",
+    "closes": "16:00"
+  }],
+  "hasMap": "https://www.google.com/maps?cid=6758143578960219819"
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr" id="hdr">
+  <div class="hdr__bar">
+    <a class="brand" href="#top" aria-label="Rent a Place, home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M4 15.5 16 5l12 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.5 14v12.5h17V14" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M13.5 26.5v-7h5v7" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand__text">
+        <strong>Rent a Place</strong>
+        <em>Easy Rentals</em>
+      </span>
+    </a>
+
+    <nav class="hdr__nav" aria-label="Primary">
+      <a href="#rentals">Rentals</a>
+      <a href="#services">What we do</a>
+      <a href="#process">How it works</a>
+      <a href="#area">The area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hdr__actions">
+      <a class="hdr__quiet" href="#contact">Book a viewing</a>
+      <a class="btn btn--coral" href="tel:+17783121408">Call 778-312-1408</a>
+    </div>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile" id="mobileMenu" hidden>
+    <a href="#rentals">Rentals</a>
+    <a href="#services">What we do</a>
+    <a href="#process">How it works</a>
+    <a href="#area">The area</a>
+    <a href="#contact">Contact</a>
+    <a class="btn btn--coral btn--block" href="tel:+17783121408">Call 778-312-1408</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero__wash" aria-hidden="true"></div>
+
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <div class="toggle" role="group" aria-label="What brings you here">
+          <a class="toggle__opt is-on" href="#rentals">I&rsquo;m renting</a>
+          <a class="toggle__opt" href="#services">I own a property</a>
+        </div>
+
+        <p class="eyebrow reveal">Chilliwack &middot; Fraser Valley Rentals</p>
+
+        <h1 class="reveal">
+          A Place That Actually<br>
+          <em>Feels Like Home.</em>
+        </h1>
+
+        <p class="lede reveal">
+          Rent a Place manages suites, townhomes and commercial space across Chilliwack,
+          combining honest listings, straight answers and property care handled end to end.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a class="btn btn--coral btn--lg" href="#rentals">See what&rsquo;s available <span aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn--white btn--lg" href="#contact">Book a viewing</a>
+        </div>
+
+        <ul class="hero__meta reveal">
+          <li>Viewings Monday to Friday</li>
+          <li>Local team, no call centres</li>
+        </ul>
+      </div>
+
+      <div class="hero__art reveal" aria-hidden="true">
+        <div class="hero__photo" data-ph="hero"></div>
+
+        <div class="float float--a">
+          <p class="float__title">Your Search, Simplified</p>
+          <ul class="float__rows">
+            <li><span>Suites</span><i>&#8593;</i></li>
+            <li><span>Townhomes</span><i>&#8593;</i></li>
+            <li><span>Commercial</span><i>&#8593;</i></li>
+            <li><span>Runaround</span><i class="dn">&#8595;</i></li>
+          </ul>
+        </div>
+
+        <div class="float float--b">
+          <p class="float__title">Renter Peace of Mind</p>
+          <ul class="float__log">
+            <li><span class="t">Viewing</span><span class="v">Booked</span><b>&#10003;</b></li>
+            <li><span class="t">Repair request</span><span class="v">Logged</span><b>&#10003;</b></li>
+            <li><span class="t">Terms</span><span class="v">In writing</span><b>&#10003;</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <div class="strip">
+    <div class="wrap strip__row">
+      <span>Local Chilliwack Team</span>
+      <span>Mon&ndash;Fri Office Hours</span>
+      <span>Written, Clear Terms</span>
+      <span>Suites &amp; Commercial</span>
+      <span>Direct Phone Line</span>
+    </div>
+  </div>
+
+  <!-- ============ PAIN ============ -->
+  <section class="section section--cream">
+    <div class="wrap mid">
+      <p class="eyebrow eyebrow--rule reveal">For Renters</p>
+      <h2 class="reveal">Finding a Rental Shouldn&rsquo;t Feel Like<br><em>A Second Full-Time Job.</em></h2>
+
+      <div class="chips reveal">
+        <span class="chip">Listings already gone</span>
+        <span class="chip">Nobody answers</span>
+        <span class="chip">Mystery fees</span>
+        <span class="chip">Photos from 2016</span>
+        <span class="chip">No parking answer</span>
+        <span class="chip">&ldquo;Pets case by case&rdquo;</span>
+        <span class="chip">Ghosted applications</span>
+        <span class="chip">Viewing never confirmed</span>
+        <span class="chip">Repairs in limbo</span>
+        <span class="chip">Deposit questions</span>
+      </div>
+
+      <p class="mid__note reveal">
+        We keep the list current, pick up the phone during office hours, and put the terms in writing
+        before anyone signs anything.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <header class="head reveal">
+        <p class="eyebrow eyebrow--rule">Full-Service Management</p>
+        <h2>Everything Behind a Good Tenancy, <em>Handled.</em></h2>
+        <p class="head__lede">
+          One local team covering renters, owners, presentation and property care, so every part of
+          the building works from the same plan.
+        </p>
+      </header>
+
+      <div class="grid-3">
+
+        <article class="svc reveal">
+          <div class="svc__media" data-ph="a">
+            <div class="mini">
+              <span class="mini__dot"></span>
+              <span class="mini__t">Enquiry</span>
+              <span class="mini__time">now</span>
+              <p class="mini__msg">Is the 2 bed still open?</p>
+              <p class="mini__reply">Yes, viewings Thursday.</p>
+            </div>
+          </div>
+          <div class="svc__body">
+            <h3>Renter Support</h3>
+            <p class="svc__hook">Straight answers, same week.</p>
+            <p>Enquiries, viewings, applications and move-in questions answered by the team that holds the keys.</p>
+            <a class="arrow" href="#contact">Book a viewing <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="svc reveal">
+          <div class="svc__media" data-ph="b">
+            <div class="mini">
+              <span class="mini__t">Current list</span>
+              <span class="mini__time">live</span>
+              <div class="mini__bars"><i></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i></div>
+              <p class="mini__cap">Updated weekly</p>
+            </div>
+          </div>
+          <div class="svc__body">
+            <h3>Honest Listings</h3>
+            <p class="svc__hook">What you see is what you tour.</p>
+            <p>Current availability, real photos, and the parking, pet and utility details stated up front.</p>
+            <a class="arrow" href="#rentals">See the rentals <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="svc reveal">
+          <div class="svc__media" data-ph="c">
+            <div class="mini">
+              <span class="mini__t">Work order</span>
+              <span class="mini__time">today</span>
+              <ul class="mini__check">
+                <li>Logged</li>
+                <li>Triaged</li>
+                <li>Scheduled</li>
+              </ul>
+            </div>
+          </div>
+          <div class="svc__body">
+            <h3>Property Care</h3>
+            <p class="svc__hook">Maintenance that moves.</p>
+            <p>Requests logged the day they arrive, triaged by urgency, with trades we have used for years.</p>
+            <a class="arrow" href="#process">How it works <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="svc reveal">
+          <div class="svc__media" data-ph="d">
+            <div class="mini">
+              <span class="mini__t">Tenancy</span>
+              <span class="mini__time">signed</span>
+              <ul class="mini__check">
+                <li>Rent &amp; utilities</li>
+                <li>Parking</li>
+                <li>Pets</li>
+              </ul>
+            </div>
+          </div>
+          <div class="svc__body">
+            <h3>Clear Terms</h3>
+            <p class="svc__hook">No surprises halfway through.</p>
+            <p>Rent, parking, pets and utilities spelled out in writing before anyone signs a thing.</p>
+            <a class="arrow" href="#contact">Ask a question <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="svc reveal">
+          <div class="svc__media" data-ph="e">
+            <div class="mini">
+              <span class="mini__t">Owner report</span>
+              <span class="mini__time">monthly</span>
+              <div class="mini__bars"><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i></div>
+              <p class="mini__cap">Occupancy &amp; upkeep</p>
+            </div>
+          </div>
+          <div class="svc__body">
+            <h3>Owner Management</h3>
+            <p class="svc__hook">Hands off, never in the dark.</p>
+            <p>Tenant placement, rent collection, inspections and upkeep for Valley property owners.</p>
+            <a class="arrow" href="#contact">Talk to us <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="svc reveal">
+          <div class="svc__media" data-ph="f">
+            <div class="mini">
+              <span class="mini__t">Commercial</span>
+              <span class="mini__time">leasing</span>
+              <ul class="mini__check">
+                <li>Street front</li>
+                <li>Office</li>
+                <li>Flex space</li>
+              </ul>
+            </div>
+          </div>
+          <div class="svc__body">
+            <h3>Commercial Leasing</h3>
+            <p class="svc__hook">Space that suits the business.</p>
+            <p>Retail, office and flex units across Chilliwack, leased and maintained by the same local team.</p>
+            <a class="arrow" href="#rentals">See commercial <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OFFER ============ -->
+  <section class="section section--blush">
+    <div class="wrap offer">
+      <div class="offer__text reveal">
+        <p class="eyebrow">Free, No Obligation</p>
+        <h2>What Are You <em>Actually</em> Looking For?</h2>
+        <p>
+          Tell us the size, the neighbourhood and your move date. We will check it against what is open
+          now, what is coming up, and what is worth waiting for.
+        </p>
+        <ul class="ticks">
+          <li>A real person reviewing your situation, not a form reply</li>
+          <li>Honest answer on timing, even when it is &ldquo;not yet&rdquo;</li>
+          <li>First call when something that fits comes open</li>
+        </ul>
+        <div class="offer__cta">
+          <a class="btn btn--coral btn--lg" href="#contact">Send your criteria <span aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn--white btn--lg" href="tel:+17783121408">Call the office</a>
+        </div>
+      </div>
+
+      <div class="offer__card reveal">
+        <p class="offer__card-title">Today at Rent a Place</p>
+        <ul class="log">
+          <li><span class="log__time">10:00 AM</span><span class="log__what">Viewing confirmed</span><b>&#10003;</b></li>
+          <li><span class="log__time">11:30 AM</span><span class="log__what">Unit listed</span><b>&#10003;</b></li>
+          <li><span class="log__time">1:15 PM</span><span class="log__what">Inspection complete</span><b>&#10003;</b></li>
+          <li><span class="log__time">2:40 PM</span><span class="log__what">Repair scheduled</span><b>&#10003;</b></li>
+          <li><span class="log__time">3:25 PM</span><span class="log__what">Keys handed over</span><b>&#10003;</b></li>
+        </ul>
+        <p class="offer__card-foot">A look at the work renters never have to chase.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="section section--cream">
+    <div class="wrap">
+      <header class="head head--center reveal">
+        <p class="eyebrow eyebrow--rule">Built for Better Tenancies</p>
+        <h2>Hospitality, Upkeep and Honest Terms <em>Working Together.</em></h2>
+      </header>
+
+      <div class="stats">
+        <div class="stat reveal">
+          <strong>Mon&ndash;Fri</strong>
+          <span class="stat__label">Office hours</span>
+          <p>10am to 4pm, reached on one local number.</p>
+        </div>
+        <div class="stat reveal">
+          <strong>Local</strong>
+          <span class="stat__label">Chilliwack team</span>
+          <p>Viewings, maintenance and leasing handled in the Valley.</p>
+        </div>
+        <div class="stat reveal">
+          <strong>Written</strong>
+          <span class="stat__label">Terms up front</span>
+          <p>Rent, parking, pets and utilities stated before signing.</p>
+        </div>
+        <div class="stat reveal">
+          <strong>Direct</strong>
+          <span class="stat__label">No call centres</span>
+          <p>The people answering are the people with the keys.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section" id="process">
+    <div class="wrap">
+      <header class="head head--center reveal">
+        <p class="eyebrow eyebrow--rule">How It Works</p>
+        <h2>From First Call to <em>Keys in Hand</em></h2>
+      </header>
+
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step__n">01</span>
+          <h3>Tell Us What You Need</h3>
+          <p>Beds, budget, neighbourhood and move date, in about two minutes.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">02</span>
+          <h3>Walk the Suite</h3>
+          <p>Viewings Monday to Friday, held around work where we can.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">03</span>
+          <h3>Apply</h3>
+          <p>Application and references, with every cost named up front.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">04</span>
+          <h3>Sign &amp; Settle In</h3>
+          <p>Tenancy agreement, keys, and a walkthrough of the building.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">05</span>
+          <h3>Live There Well</h3>
+          <p>Maintenance, questions and renewals handled by the same team.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ RENTALS ============ -->
+  <section class="section section--cream" id="rentals">
+    <div class="wrap">
+      <header class="head reveal">
+        <p class="eyebrow eyebrow--rule">The Portfolio</p>
+        <h2>Homes Renters <em>Choose</em></h2>
+        <p class="head__lede">
+          Managed directly by our team across Chilliwack, Sardis, Vedder Crossing and Promontory.
+        </p>
+      </header>
+
+      <!--
+        PLACEHOLDER LISTINGS
+        Replace each .unit__media gradient with a real <img>, and swap the
+        pricing line once rents are confirmed. Six cards below.
+      -->
+      <div class="grid-3">
+
+        <article class="unit tilt reveal">
+          <div class="unit__media" data-ph="a"><span class="tag">Suite</span></div>
+          <div class="unit__body">
+            <p class="unit__loc">Downtown Chilliwack</p>
+            <h3>The Corner Two</h3>
+            <p class="unit__sub">Corner suite &middot; Morning sun &middot; In-suite laundry</p>
+            <ul class="unit__specs"><li>2 bed</li><li>2 bath</li><li>940 sq ft</li></ul>
+            <div class="unit__tags"><span>Available</span><span>Parking</span></div>
+            <a class="arrow" href="#contact">View stay <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="unit tilt reveal">
+          <div class="unit__media" data-ph="b"><span class="tag">Suite</span></div>
+          <div class="unit__body">
+            <p class="unit__loc">Sardis</p>
+            <h3>Garden Level One</h3>
+            <p class="unit__sub">Private entry &middot; Patio &middot; Quiet block</p>
+            <ul class="unit__specs"><li>1 bed</li><li>1 bath</li><li>610 sq ft</li></ul>
+            <div class="unit__tags"><span>Available</span><span>Pet Friendly</span></div>
+            <a class="arrow" href="#contact">View stay <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="unit tilt reveal">
+          <div class="unit__media" data-ph="c"><span class="tag">Townhome</span></div>
+          <div class="unit__body">
+            <p class="unit__loc">Vedder Crossing</p>
+            <h3>Vedder Row</h3>
+            <p class="unit__sub">Three levels &middot; Fenced yard &middot; Near the trails</p>
+            <ul class="unit__specs"><li>3 bed</li><li>2.5 bath</li><li>1,340 sq ft</li></ul>
+            <div class="unit__tags"><span>Coming Soon</span><span>Pet Friendly</span></div>
+            <a class="arrow" href="#contact">View stay <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="unit tilt reveal">
+          <div class="unit__media" data-ph="d"><span class="tag">Suite</span></div>
+          <div class="unit__body">
+            <p class="unit__loc">Promontory</p>
+            <h3>The Lookout</h3>
+            <p class="unit__sub">Top floor &middot; Mountain view &middot; Covered balcony</p>
+            <ul class="unit__specs"><li>2 bed</li><li>1 bath</li><li>855 sq ft</li></ul>
+            <div class="unit__tags"><span>Available</span><span>View</span></div>
+            <a class="arrow" href="#contact">View stay <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="unit tilt reveal">
+          <div class="unit__media" data-ph="e"><span class="tag">Studio</span></div>
+          <div class="unit__body">
+            <p class="unit__loc">Chilliwack Proper</p>
+            <h3>The Small Door</h3>
+            <p class="unit__sub">Private entry &middot; Walk to downtown &middot; Utilities included</p>
+            <ul class="unit__specs"><li>Studio</li><li>1 bath</li><li>480 sq ft</li></ul>
+            <div class="unit__tags"><span>Waitlist</span><span>Utilities</span></div>
+            <a class="arrow" href="#contact">View stay <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="unit tilt reveal">
+          <div class="unit__media" data-ph="f"><span class="tag">Commercial</span></div>
+          <div class="unit__body">
+            <p class="unit__loc">Young Road</p>
+            <h3>Young Street Front</h3>
+            <p class="unit__sub">Retail frontage &middot; High traffic &middot; Rear access</p>
+            <ul class="unit__specs"><li>Retail</li><li>1,200 sq ft</li><li>Street front</li></ul>
+            <div class="unit__tags"><span>Available</span><span>Signage</span></div>
+            <a class="arrow" href="#contact">View stay <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="mid__note reveal">
+        Not seeing it? Tell us what you are after and we will call you when it opens up.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ AREA ============ -->
+  <section class="section" id="area">
+    <div class="wrap split">
+      <div class="reveal">
+        <p class="eyebrow eyebrow--rule">The Area</p>
+        <h2>Rooted in <em>Chilliwack</em></h2>
+        <p class="split__p">
+          Mountains on three sides, the Vedder on your afternoon walk, and a straight drive to
+          Abbotsford or Vancouver when you want the city. Chilliwack kept the room the Lower Mainland
+          ran out of, and we have rented here long enough to know which streets suit which lives.
+        </p>
+        <ul class="ticks">
+          <li>Minutes to Vedder River trails and Cultus Lake</li>
+          <li>Highway 1 access for Valley and Metro commuters</li>
+          <li>Schools, UFV and the hospital close at hand</li>
+        </ul>
+        <a class="btn btn--white btn--lg" href="https://www.google.com/maps?cid=6758143578960219819" target="_blank" rel="noopener">Find us on Google Maps</a>
+      </div>
+
+      <div class="map reveal">
+        <iframe
+          title="Map of Chilliwack, BC"
+          src="https://maps.google.com/maps?q=Chilliwack%2C%20BC&amp;z=12&amp;output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--blush" id="contact">
+    <div class="wrap split split--form">
+      <div class="reveal">
+        <p class="eyebrow eyebrow--rule">Get in Touch</p>
+        <h2>Let&rsquo;s Find <em>Your Place</em></h2>
+        <p class="split__p">
+          Office hours are Monday to Friday, 10am to 4pm. Leave a note any time and we will come back
+          to you on the next business day.
+        </p>
+
+        <dl class="details">
+          <div><dt>Phone</dt><dd><a href="tel:+17783121408">778-312-1408</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:office@ratzlaffco.ca">office@ratzlaffco.ca</a></dd></div>
+          <div><dt>Hours</dt><dd>Mon&ndash;Fri, 10:00 &ndash; 16:00</dd></div>
+          <div><dt>Area</dt><dd>Chilliwack &amp; the Fraser Valley</dd></div>
+        </dl>
+      </div>
+
+      <!--
+        FORM ENDPOINT: action is a placeholder. Point it at a real handler
+        (Formspree, Netlify Forms, a Vercel function) before launch.
+      -->
+      <form class="form reveal" action="#" method="post" novalidate>
+        <p class="form__head">Property enquiry</p>
+
+        <div class="field">
+          <label for="f-name">Full name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-type">Looking for</label>
+            <select id="f-type" name="type">
+              <option>Studio</option>
+              <option>1 bedroom</option>
+              <option selected>2 bedroom</option>
+              <option>3 bedroom or larger</option>
+              <option>Townhome</option>
+              <option>Commercial space</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-date">Move-in date</label>
+            <input id="f-date" name="movein" type="date">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-msg">Anything else?</label>
+          <textarea id="f-msg" name="message" rows="4" placeholder="Pets, parking, must-have neighbourhoods&hellip;"></textarea>
+        </div>
+
+        <button class="btn btn--coral btn--block btn--lg" type="submit">Send enquiry <span aria-hidden="true">&rarr;</span></button>
+        <p class="form__fine">We only use your details to answer this enquiry.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <div class="foot__brand">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M4 15.5 16 5l12 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.5 14v12.5h17V14" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M13.5 26.5v-7h5v7" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+      </span>
+      <div>
+        <strong>Rent a Place</strong>
+        <span>Easy Rentals &middot; Chilliwack, BC</span>
+      </div>
+    </div>
+
+    <nav class="foot__links" aria-label="Footer">
+      <a href="#rentals">Rentals</a>
+      <a href="#services">What we do</a>
+      <a href="#process">How it works</a>
+      <a href="#area">The area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="foot__meta">
+      <a href="tel:+17783121408">778-312-1408</a>
+      <a href="mailto:office@ratzlaffco.ca">office@ratzlaffco.ca</a>
+      <span>&copy; <span id="yr">2026</span> Rent a Place</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
