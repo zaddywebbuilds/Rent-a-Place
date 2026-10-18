@@ -10,13 +10,13 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Chilliwack Rentals &amp; Property Management | Rent a Place">
 <meta property="og:description" content="Locally managed rentals in Chilliwack and the Fraser Valley. Browse available homes and book a viewing.">
-<meta property="og:image" content="assets/img/og-cover.jpg">
+<meta property="og:image" content="assets/img/hero-valley-street.webp">
 
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/styles.css?v=3">
 
 <script type="application/ld+json">
 {
@@ -92,6 +92,11 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero" id="top">
+    <div class="hero__bg">
+      <img src="assets/img/hero-valley-street.webp?v=2"
+           alt="Illustrative concept image of a Fraser Valley residential street with mountains in the distance"
+           width="1672" height="941" fetchpriority="high" decoding="async">
+    </div>
     <div class="hero__wash" aria-hidden="true"></div>
 
     <div class="wrap hero__grid">
@@ -125,8 +130,6 @@
       </div>
 
       <div class="hero__art reveal" aria-hidden="true">
-        <div class="hero__photo" data-ph="hero"></div>
-
         <div class="float float--a">
           <p class="float__title">Your Search, Simplified</p>
           <ul class="float__rows">
@@ -201,7 +204,8 @@
       <div class="grid-3">
 
         <article class="svc reveal">
-          <div class="svc__media" data-ph="a">
+          <div class="svc__media has-img">
+            <img src="assets/img/services/renter-support.webp?v=2" alt="Illustrative concept image of a furnished rental living area" width="510" height="260" loading="lazy" decoding="async">
             <div class="mini">
               <span class="mini__dot"></span>
               <span class="mini__t">Enquiry</span>
@@ -219,7 +223,8 @@
         </article>
 
         <article class="svc reveal">
-          <div class="svc__media" data-ph="b">
+          <div class="svc__media has-img">
+            <img src="assets/img/services/honest-listings.webp?v=2" alt="Illustrative concept image of a modern rental kitchen" width="506" height="260" loading="lazy" decoding="async">
             <div class="mini">
               <span class="mini__t">Current list</span>
               <span class="mini__time">live</span>
@@ -236,7 +241,8 @@
         </article>
 
         <article class="svc reveal">
-          <div class="svc__media" data-ph="c">
+          <div class="svc__media has-img">
+            <img src="assets/img/services/property-care.webp?v=2" alt="Illustrative concept image of in-suite laundry appliances" width="266" height="174" loading="lazy" decoding="async">
             <div class="mini">
               <span class="mini__t">Work order</span>
               <span class="mini__time">today</span>
@@ -256,7 +262,8 @@
         </article>
 
         <article class="svc reveal">
-          <div class="svc__media" data-ph="d">
+          <div class="svc__media has-img">
+            <img src="assets/img/services/clear-terms.webp?v=2" alt="Illustrative concept image of a furnished bedroom ready for move-in" width="312" height="190" loading="lazy" decoding="async">
             <div class="mini">
               <span class="mini__t">Tenancy</span>
               <span class="mini__time">signed</span>
@@ -276,7 +283,8 @@
         </article>
 
         <article class="svc reveal">
-          <div class="svc__media" data-ph="e">
+          <div class="svc__media has-img">
+            <img src="assets/img/services/owner-management.webp?v=2" alt="Illustrative concept image of a well-maintained residential street" width="246" height="176" loading="lazy" decoding="async">
             <div class="mini">
               <span class="mini__t">Owner report</span>
               <span class="mini__time">monthly</span>
@@ -293,7 +301,8 @@
         </article>
 
         <article class="svc reveal">
-          <div class="svc__media" data-ph="f">
+          <div class="svc__media svc__media--pending" data-ph="f">
+            <p class="pending-note">Photograph pending</p>
             <div class="mini">
               <span class="mini__t">Commercial</span>
               <span class="mini__time">leasing</span>
@@ -431,83 +440,89 @@
         <p class="head__lede">
           Managed directly by our team across Chilliwack, Sardis, Vedder Crossing and Promontory.
         </p>
+        <p class="disclosure">
+          Illustrative imagery shown. Actual property photographs and availability to be confirmed.
+        </p>
       </header>
 
       <!--
-        PLACEHOLDER LISTINGS
-        Replace each .unit__media gradient with a real <img>, and swap the
-        pricing line once rents are confirmed. Six cards below.
+        ILLUSTRATIVE LISTINGS
+        The five photographs below are AI-generated concept images from the
+        visual pack, not photographs of these units. Replace every one with
+        client-supplied photographs, and confirm names, specs and availability,
+        before this runs as a genuine listings page. The sixth card (commercial)
+        deliberately carries a flagged placeholder instead of a residential image.
       -->
       <div class="grid-3">
 
         <article class="unit tilt reveal">
-          <div class="unit__media" data-ph="a"><span class="tag">Suite</span></div>
+          <div class="unit__media has-img"><img src="assets/img/units/corner-two.webp?v=2" alt="Illustrative concept image of a bright furnished living room" width="502" height="262" loading="lazy" decoding="async"><span class="tag">Suite</span></div>
           <div class="unit__body">
             <p class="unit__loc">Downtown Chilliwack</p>
             <h3>The Corner Two</h3>
             <p class="unit__sub">Corner suite &middot; Morning sun &middot; In-suite laundry</p>
             <ul class="unit__specs"><li>2 bed</li><li>2 bath</li><li>940 sq ft</li></ul>
-            <div class="unit__tags"><span>Available</span><span>Parking</span></div>
+            <div class="unit__tags"><span>Parking</span></div>
             <a class="arrow" href="#contact">View stay <span aria-hidden="true">&rarr;</span></a>
           </div>
         </article>
 
         <article class="unit tilt reveal">
-          <div class="unit__media" data-ph="b"><span class="tag">Suite</span></div>
+          <div class="unit__media has-img"><img src="assets/img/units/garden-level-one.webp?v=2" alt="Illustrative concept image of a furnished bedroom" width="316" height="190" loading="lazy" decoding="async"><span class="tag">Suite</span></div>
           <div class="unit__body">
             <p class="unit__loc">Sardis</p>
             <h3>Garden Level One</h3>
             <p class="unit__sub">Private entry &middot; Patio &middot; Quiet block</p>
             <ul class="unit__specs"><li>1 bed</li><li>1 bath</li><li>610 sq ft</li></ul>
-            <div class="unit__tags"><span>Available</span><span>Pet Friendly</span></div>
+            <div class="unit__tags"><span>Pet Friendly</span></div>
             <a class="arrow" href="#contact">View stay <span aria-hidden="true">&rarr;</span></a>
           </div>
         </article>
 
         <article class="unit tilt reveal">
-          <div class="unit__media" data-ph="c"><span class="tag">Townhome</span></div>
+          <div class="unit__media has-img"><img src="assets/img/units/vedder-row.webp?v=2" alt="Illustrative concept image of a detached residential exterior" width="499" height="259" loading="lazy" decoding="async"><span class="tag">Townhome</span></div>
           <div class="unit__body">
             <p class="unit__loc">Vedder Crossing</p>
             <h3>Vedder Row</h3>
             <p class="unit__sub">Three levels &middot; Fenced yard &middot; Near the trails</p>
             <ul class="unit__specs"><li>3 bed</li><li>2.5 bath</li><li>1,340 sq ft</li></ul>
-            <div class="unit__tags"><span>Coming Soon</span><span>Pet Friendly</span></div>
+            <div class="unit__tags"><span>Pet Friendly</span></div>
             <a class="arrow" href="#contact">View stay <span aria-hidden="true">&rarr;</span></a>
           </div>
         </article>
 
         <article class="unit tilt reveal">
-          <div class="unit__media" data-ph="d"><span class="tag">Suite</span></div>
+          <div class="unit__media has-img"><img src="assets/img/units/the-lookout.webp?v=2" alt="Illustrative concept image of a furnished bedroom" width="296" height="192" loading="lazy" decoding="async"><span class="tag">Suite</span></div>
           <div class="unit__body">
             <p class="unit__loc">Promontory</p>
             <h3>The Lookout</h3>
             <p class="unit__sub">Top floor &middot; Mountain view &middot; Covered balcony</p>
             <ul class="unit__specs"><li>2 bed</li><li>1 bath</li><li>855 sq ft</li></ul>
-            <div class="unit__tags"><span>Available</span><span>View</span></div>
+            <div class="unit__tags"><span>View</span></div>
             <a class="arrow" href="#contact">View stay <span aria-hidden="true">&rarr;</span></a>
           </div>
         </article>
 
         <article class="unit tilt reveal">
-          <div class="unit__media" data-ph="e"><span class="tag">Studio</span></div>
+          <div class="unit__media has-img"><img src="assets/img/units/the-small-door.webp?v=2" alt="Illustrative concept image of a compact modern kitchenette" width="503" height="262" loading="lazy" decoding="async"><span class="tag">Studio</span></div>
           <div class="unit__body">
             <p class="unit__loc">Chilliwack Proper</p>
             <h3>The Small Door</h3>
             <p class="unit__sub">Private entry &middot; Walk to downtown &middot; Utilities included</p>
             <ul class="unit__specs"><li>Studio</li><li>1 bath</li><li>480 sq ft</li></ul>
-            <div class="unit__tags"><span>Waitlist</span><span>Utilities</span></div>
+            <div class="unit__tags"><span>Utilities</span></div>
             <a class="arrow" href="#contact">View stay <span aria-hidden="true">&rarr;</span></a>
           </div>
         </article>
 
         <article class="unit tilt reveal">
-          <div class="unit__media" data-ph="f"><span class="tag">Commercial</span></div>
+          <div class="unit__media unit__media--pending" data-ph="f"><p class="pending-note">Commercial photograph pending</p><span class="tag">Commercial</span></div>
           <div class="unit__body">
             <p class="unit__loc">Young Road</p>
             <h3>Young Street Front</h3>
             <p class="unit__sub">Retail frontage &middot; High traffic &middot; Rear access</p>
             <ul class="unit__specs"><li>Retail</li><li>1,200 sq ft</li><li>Street front</li></ul>
-            <div class="unit__tags"><span>Available</span><span>Signage</span></div>
+            <div class="unit__tags"><span>Signage</span></div>
             <a class="arrow" href="#contact">View stay <span aria-hidden="true">&rarr;</span></a>
           </div>
         </article>
@@ -647,6 +662,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js" defer></script>
+<script src="assets/js/main.js?v=3" defer></script>
 </body>
 </html>

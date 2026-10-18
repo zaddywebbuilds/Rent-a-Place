@@ -113,7 +113,7 @@
       var fine = form.querySelector(".form__fine");
       if (btn) {
         btn.disabled = true;
-        btn.textContent = "Enquiry ready to send";
+        btn.textContent = "Form not connected yet";
       }
       if (fine) {
         fine.innerHTML =
