@@ -26,9 +26,12 @@ green and blue palette.
   phrase), Inter for everything else.
 - **Shape:** large radii (18 / 28 / 32 / 40px), floating glass panels, soft cool
   shadows, no hard borders.
-- **Patterns:** floating pill header, hero with glass cards over a photo plate,
-  eyebrow with rules, chip clouds, service cards with mini UI mockups, numbered
-  process circles on a connecting line, listing cards with tag pills.
+- **Patterns:** floating pill header, hero with the photograph on a surfaced
+  panel beside the copy, eyebrow with rules, chip clouds, numbered process
+  circles on a connecting line, listing cards with tag pills.
+- **No photography sits behind type** and **no photograph is cropped**: every
+  image is shown whole (`object-fit:contain`) on a matted plate, so nothing is
+  cut off at any viewport.
 
 Every token lives in `:root` at the top of `assets/css/styles.css`. Section
 modifiers are `.section--snow` (near-white) and `.section--wash` (moss to sky
@@ -57,7 +60,7 @@ Placed (11 slots, 8 distinct photographs):
 
 | Slot | File | Native size |
 | --- | --- | --- |
-| Hero background | `hero-valley-street.webp` | 1672x941 |
+| Hero panel | `hero-valley-street.webp` | 1672x941 |
 | The Corner Two | `units/corner-two.webp` | 502x262 |
 | Garden Level One | `units/garden-level-one.webp` | 316x190 |
 | Vedder Row | `units/vedder-row.webp` | 499x259 |
@@ -138,3 +141,24 @@ unit name, specification and availability date.
   `prefers-reduced-motion`.
 - The hero "I'm renting / I own a property" pills are anchor links to `#rentals`
   and `#services`, not a JS toggle.
+
+
+## SEO
+
+- Descriptive `<title>` and meta description naming Chilliwack, the unit types
+  and the neighbourhoods served.
+- `<link rel="canonical">`, `og:*` and `twitter:*` tags with absolute URLs and
+  image dimensions, `lang="en-CA"`, `geo.region` / `geo.placename`.
+- `RealEstateAgent` JSON-LD with url, image, telephone, opening hours,
+  `areaServed` (Chilliwack, Sardis, Vedder Crossing, Promontory, Fraser Valley)
+  and `makesOffer` for the three service lines. The illustrative listings are
+  deliberately **not** marked up as real offers or accommodation.
+- `robots.txt` and `sitemap.xml` at the site root.
+- Hero image preloaded with `fetchpriority="high"` for LCP; every other image
+  is lazy-loaded with `width`/`height` set to avoid layout shift.
+- Asset URLs are versioned (`?v=`), so replacing a photo at the same path does
+  not serve a stale cached copy.
+
+Still worth doing once the business details are confirmed: a real custom domain
+instead of the github.io subpath, a published street address for local SEO, and
+Google Business Profile linked to the live site.

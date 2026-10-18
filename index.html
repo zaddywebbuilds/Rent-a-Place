@@ -1,44 +1,78 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-CA">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chilliwack Rentals &amp; Property Management | Rent a Place</title>
-<meta name="description" content="Rent a Place is a locally managed rental agency in Chilliwack, BC. Browse available suites, townhomes and commercial space across the Fraser Valley, and book a viewing with a local team.">
-<meta name="theme-color" content="#f4e5d0">
+<title>Chilliwack Rentals | Suites, Townhomes &amp; Commercial | Rent a Place</title>
+<meta name="description" content="Locally managed rentals in Chilliwack, BC. Suites, townhomes and commercial space across Sardis, Vedder Crossing and Promontory, with viewings Monday to Friday and terms in writing.">
+<meta name="theme-color" content="#e9f1ee">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Rent a Place">
+<meta name="geo.region" content="CA-BC">
+<meta name="geo.placename" content="Chilliwack, British Columbia">
+
+<link rel="canonical" href="https://zaddywebbuilds.github.io/Rent-a-Place/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Chilliwack Rentals &amp; Property Management | Rent a Place">
-<meta property="og:description" content="Locally managed rentals in Chilliwack and the Fraser Valley. Browse available homes and book a viewing.">
-<meta property="og:image" content="assets/img/hero-valley-street.webp">
+<meta property="og:site_name" content="Rent a Place">
+<meta property="og:locale" content="en_CA">
+<meta property="og:url" content="https://zaddywebbuilds.github.io/Rent-a-Place/">
+<meta property="og:title" content="Chilliwack Rentals | Suites, Townhomes &amp; Commercial | Rent a Place">
+<meta property="og:description" content="Locally managed rentals in Chilliwack, BC. Suites, townhomes and commercial space across the Fraser Valley, with viewings Monday to Friday.">
+<meta property="og:image" content="https://zaddywebbuilds.github.io/Rent-a-Place/assets/img/hero-valley-street.webp">
+<meta property="og:image:width" content="1672">
+<meta property="og:image:height" content="941">
+<meta property="og:image:alt" content="Illustrative concept image of a Fraser Valley residential street">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chilliwack Rentals | Rent a Place">
+<meta name="twitter:description" content="Locally managed rentals in Chilliwack, BC. Suites, townhomes and commercial space across the Fraser Valley.">
+<meta name="twitter:image" content="https://zaddywebbuilds.github.io/Rent-a-Place/assets/img/hero-valley-street.webp">
 
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/img/hero-valley-street.webp?v=2" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css?v=3">
+<link rel="stylesheet" href="assets/css/styles.css?v=6">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
+  "@id": "https://zaddywebbuilds.github.io/Rent-a-Place/#agency",
   "name": "Rent a Place",
-  "description": "Locally managed rental agency serving Chilliwack and the Fraser Valley.",
+  "alternateName": "Rent a Place Easy Rentals",
+  "description": "Locally managed rental agency serving Chilliwack and the Fraser Valley, covering suites, townhomes and commercial space.",
+  "url": "https://zaddywebbuilds.github.io/Rent-a-Place/",
+  "image": "https://zaddywebbuilds.github.io/Rent-a-Place/assets/img/hero-valley-street.webp",
   "telephone": "+1-778-312-1408",
   "email": "office@ratzlaffco.ca",
-  "areaServed": "Chilliwack, British Columbia",
+  "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Chilliwack",
     "addressRegion": "BC",
     "addressCountry": "CA"
   },
+  "areaServed": [
+    { "@type": "City", "name": "Chilliwack" },
+    { "@type": "Place", "name": "Sardis" },
+    { "@type": "Place", "name": "Vedder Crossing" },
+    { "@type": "Place", "name": "Promontory" },
+    { "@type": "Place", "name": "Fraser Valley" }
+  ],
+  "knowsLanguage": "en-CA",
   "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
     "opens": "10:00",
     "closes": "16:00"
   }],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential rentals" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial leasing" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Property management for owners" } }
+  ],
   "hasMap": "https://www.google.com/maps?cid=6758143578960219819"
 }
 </script>
@@ -92,11 +126,6 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero" id="top">
-    <div class="hero__bg">
-      <img src="assets/img/hero-valley-street.webp?v=2"
-           alt="Illustrative concept image of a Fraser Valley residential street with mountains in the distance"
-           width="1672" height="941" fetchpriority="high" decoding="async">
-    </div>
     <div class="hero__wash" aria-hidden="true"></div>
 
     <div class="wrap hero__grid">
@@ -129,25 +158,12 @@
         </ul>
       </div>
 
-      <div class="hero__art reveal" aria-hidden="true">
-        <div class="float float--a">
-          <p class="float__title">Your Search, Simplified</p>
-          <ul class="float__rows">
-            <li><span>Suites</span><i>&#8593;</i></li>
-            <li><span>Townhomes</span><i>&#8593;</i></li>
-            <li><span>Commercial</span><i>&#8593;</i></li>
-            <li><span>Runaround</span><i class="dn">&#8595;</i></li>
-          </ul>
-        </div>
-
-        <div class="float float--b">
-          <p class="float__title">Renter Peace of Mind</p>
-          <ul class="float__log">
-            <li><span class="t">Viewing</span><span class="v">Booked</span><b>&#10003;</b></li>
-            <li><span class="t">Repair request</span><span class="v">Logged</span><b>&#10003;</b></li>
-            <li><span class="t">Terms</span><span class="v">In writing</span><b>&#10003;</b></li>
-          </ul>
-        </div>
+      <div class="hero__art reveal">
+        <figure class="plate plate--hero">
+          <img src="assets/img/hero-valley-street.webp?v=2"
+               alt="Illustrative concept image of a Fraser Valley residential street with mountains in the distance"
+               width="1672" height="941" fetchpriority="high" decoding="async">
+        </figure>
       </div>
     </div>
   </section>
@@ -206,13 +222,6 @@
         <article class="svc reveal">
           <div class="svc__media has-img">
             <img src="assets/img/services/renter-support.webp?v=2" alt="Illustrative concept image of a furnished rental living area" width="510" height="260" loading="lazy" decoding="async">
-            <div class="mini">
-              <span class="mini__dot"></span>
-              <span class="mini__t">Enquiry</span>
-              <span class="mini__time">now</span>
-              <p class="mini__msg">Is the 2 bed still open?</p>
-              <p class="mini__reply">Yes, viewings Thursday.</p>
-            </div>
           </div>
           <div class="svc__body">
             <h3>Renter Support</h3>
@@ -225,12 +234,6 @@
         <article class="svc reveal">
           <div class="svc__media has-img">
             <img src="assets/img/services/honest-listings.webp?v=2" alt="Illustrative concept image of a modern rental kitchen" width="506" height="260" loading="lazy" decoding="async">
-            <div class="mini">
-              <span class="mini__t">Current list</span>
-              <span class="mini__time">live</span>
-              <div class="mini__bars"><i></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i></div>
-              <p class="mini__cap">Updated weekly</p>
-            </div>
           </div>
           <div class="svc__body">
             <h3>Honest Listings</h3>
@@ -243,15 +246,6 @@
         <article class="svc reveal">
           <div class="svc__media has-img">
             <img src="assets/img/services/property-care.webp?v=2" alt="Illustrative concept image of in-suite laundry appliances" width="266" height="174" loading="lazy" decoding="async">
-            <div class="mini">
-              <span class="mini__t">Work order</span>
-              <span class="mini__time">today</span>
-              <ul class="mini__check">
-                <li>Logged</li>
-                <li>Triaged</li>
-                <li>Scheduled</li>
-              </ul>
-            </div>
           </div>
           <div class="svc__body">
             <h3>Property Care</h3>
@@ -264,15 +258,6 @@
         <article class="svc reveal">
           <div class="svc__media has-img">
             <img src="assets/img/services/clear-terms.webp?v=2" alt="Illustrative concept image of a furnished bedroom ready for move-in" width="312" height="190" loading="lazy" decoding="async">
-            <div class="mini">
-              <span class="mini__t">Tenancy</span>
-              <span class="mini__time">signed</span>
-              <ul class="mini__check">
-                <li>Rent &amp; utilities</li>
-                <li>Parking</li>
-                <li>Pets</li>
-              </ul>
-            </div>
           </div>
           <div class="svc__body">
             <h3>Clear Terms</h3>
@@ -285,12 +270,6 @@
         <article class="svc reveal">
           <div class="svc__media has-img">
             <img src="assets/img/services/owner-management.webp?v=2" alt="Illustrative concept image of a well-maintained residential street" width="246" height="176" loading="lazy" decoding="async">
-            <div class="mini">
-              <span class="mini__t">Owner report</span>
-              <span class="mini__time">monthly</span>
-              <div class="mini__bars"><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i></div>
-              <p class="mini__cap">Occupancy &amp; upkeep</p>
-            </div>
           </div>
           <div class="svc__body">
             <h3>Owner Management</h3>
@@ -303,15 +282,6 @@
         <article class="svc reveal">
           <div class="svc__media svc__media--pending" data-ph="f">
             <p class="pending-note">Photograph pending</p>
-            <div class="mini">
-              <span class="mini__t">Commercial</span>
-              <span class="mini__time">leasing</span>
-              <ul class="mini__check">
-                <li>Street front</li>
-                <li>Office</li>
-                <li>Flex space</li>
-              </ul>
-            </div>
           </div>
           <div class="svc__body">
             <h3>Commercial Leasing</h3>
@@ -344,18 +314,6 @@
           <a class="btn btn--accent btn--lg" href="#contact">Send your criteria <span aria-hidden="true">&rarr;</span></a>
           <a class="btn btn--white btn--lg" href="tel:+17783121408">Call the office</a>
         </div>
-      </div>
-
-      <div class="offer__card reveal">
-        <p class="offer__card-title">Today at Rent a Place</p>
-        <ul class="log">
-          <li><span class="log__time">10:00 AM</span><span class="log__what">Viewing confirmed</span><b>&#10003;</b></li>
-          <li><span class="log__time">11:30 AM</span><span class="log__what">Unit listed</span><b>&#10003;</b></li>
-          <li><span class="log__time">1:15 PM</span><span class="log__what">Inspection complete</span><b>&#10003;</b></li>
-          <li><span class="log__time">2:40 PM</span><span class="log__what">Repair scheduled</span><b>&#10003;</b></li>
-          <li><span class="log__time">3:25 PM</span><span class="log__what">Keys handed over</span><b>&#10003;</b></li>
-        </ul>
-        <p class="offer__card-foot">A look at the work renters never have to chase.</p>
       </div>
     </div>
   </section>

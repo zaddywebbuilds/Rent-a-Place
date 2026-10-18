@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zaddywebbuilds.github.io/Rent-a-Place/sitemap.xml
